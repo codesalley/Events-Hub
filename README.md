@@ -1,6 +1,8 @@
 # Events Hub
 ***A powerful single-page web application for suggesting events closer to you, user can filter to show events he/she is most interested in***
 
+**Ps** ***Your location is required for this app to suggest events closer.***
+
 
 ## Getting Started
 

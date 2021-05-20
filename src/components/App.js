@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import { connect } from 'react-redux';
+import NavBar from './NavBar';
+import Category from './Category';
+import { getAllEvents } from '../actions';
 
-function App() {
+function App({ getEvents }) {
+  console.log(getEvents);
+  useEffect(() => {
+    const res = getEvents(10);
+    console.log(res);
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <NavBar />
+      <Category />
     </div>
   );
 }
 
-export default App;
+const mapPropsToState = () => ({
+  getEvents: (size) => getAllEvents(size),
+});
+
+export default connect(null, mapPropsToState)(App);
