@@ -1,12 +1,12 @@
 import { GET_ALL_EVENTS } from '../utils/Types';
-import { getEvents } from './workers/index';
+import initState from '../store/initState';
 
-const eventsReducer = async (state = [], actions) => {
+const eventsReducer = (state = initState, actions) => {
   const { type, payload } = actions;
-
+  console.log(payload);
   switch (type) {
     case GET_ALL_EVENTS:
-      return [...state, await getEvents(payload.size)];
+      return [...state, payload.data];
     default:
       return state;
   }
