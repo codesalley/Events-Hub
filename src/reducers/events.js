@@ -5,7 +5,8 @@ const eventsReducer = (state = initState, actions) => {
   const { type, payload } = actions;
   switch (type) {
     case GET_ALL_EVENTS:
-      return [...state, payload.data];
+      // eslint-disable-next-line no-underscore-dangle
+      return [...payload.data._embedded.events];
     default:
       return state;
   }

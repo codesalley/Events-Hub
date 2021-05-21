@@ -64,6 +64,36 @@ const countryCodes = [
     country: 'Portugal',
     code: 'PT',
   },
+  {
+    id: 14,
+    country: 'Netherlands',
+    code: 'NL',
+  },
+  {
+    id: 15,
+    country: 'Czech Republic',
+    code: 'CZ',
+  },
+  {
+    id: 16,
+    country: 'Spain',
+    code: 'ES',
+  },
+  {
+    id: 17,
+    country: 'Denmark',
+    code: 'DK',
+  },
+  {
+    id: 18,
+    country: 'New Zealand',
+    code: 'NZ',
+  },
+  {
+    id: 19,
+    country: 'Switzerland',
+    code: 'CH',
+  },
 ];
 
 export default countryCodes;

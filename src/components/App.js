@@ -1,18 +1,21 @@
-// import { useEffect } from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import NavBar from './NavBar';
 import Category from './Category';
 import { getAllEvents } from '../actions/index';
+import Container from './Container';
 
 function App({ getEvents }) {
-  const res = getEvents(10);
-  console.log(res);
+  useEffect(() => {
+    getEvents(50);
+  }, []);
 
   return (
-    <div className="main">
+    <div className="main h-screen overflow-scroll px-4">
       <NavBar />
       <Category />
+      <Container />
     </div>
   );
 }
