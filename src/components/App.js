@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -6,27 +5,33 @@ import NavBar from './NavBar';
 import Category from './Category';
 import { getAllEvents } from '../actions/index';
 import Container from './Container';
+import SplashScreen from './SplashScreen';
 
-function App({ getEvents }) {
+function App({ getEvents, events }) {
   useEffect(() => {
-    getEvents(5);
+    getEvents(200);
   }, []);
 
-  return (
+  return events.length > 2 ? (
     <div className="main  px-2 flex flex-col gap-2 overflow-scroll">
       <NavBar />
       <Category />
       <Container />
     </div>
-  );
+  ) : <SplashScreen />;
 }
 
 App.propTypes = {
   getEvents: PropTypes.func.isRequired,
+  events: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-const mapPropsToState = {
+const mapDispatchToProps = {
   getEvents: (size) => getAllEvents(size),
 };
 
-export default connect(null, mapPropsToState)(App);
+const mapStateToProps = (state) => ({
+  events: state.events,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -12,7 +12,7 @@ const Category = ({ filter }) => {
 
   return (
 
-    <MainCategoryDiv className=" flex flex-row overflow-x-scroll overscroll-contain">
+    <MainCategoryDiv className=" flex  flex-row overflow-x-scroll overscroll-contain">
       {countryCodes.map((item) => (
         <CategoryCard key={item.id.toString()} props={item} onclick={onclick} />
       ))}

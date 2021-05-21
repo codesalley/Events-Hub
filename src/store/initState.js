@@ -2,4 +2,4 @@ export const initState = [
 
 ];
 
-export const filter = 'all';
+export const filter = 'ALL';
