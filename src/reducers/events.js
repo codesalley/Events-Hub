@@ -1,9 +1,8 @@
 import { GET_ALL_EVENTS } from '../utils/Types';
-import initState from '../store/initState';
+import { initState } from '../store/initState';
 
 const eventsReducer = (state = initState, actions) => {
   const { type, payload } = actions;
-  console.log(payload);
   switch (type) {
     case GET_ALL_EVENTS:
       return [...state, payload.data];

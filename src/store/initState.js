@@ -1,4 +1,4 @@
-const initState = [
+export const initState = [
   {
     name: 'Thursday Ticket Bukta - Tromsø Open Air Festival 2020',
     type: 'event',
@@ -568,4 +568,4 @@ const initState = [
   },
 ];
 
-export default initState;
+export const filter = 'all';

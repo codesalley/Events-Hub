@@ -13,10 +13,9 @@ export const getAllEvents = (size) => async (dispatch) => {
   return data;
 };
 
-export const getEventByCode = (size, code) => ({
+export const getEventByCode = (code) => ({
   type: GET_EVENT_BY_COUNTRY,
   payload: {
-    size,
     code,
   },
 });
