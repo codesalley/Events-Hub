@@ -41,8 +41,8 @@ const countryCodes = [
   },
   {
     id: 9,
-    country: 'Ghana',
-    code: 'GH',
+    country: 'Croatia',
+    code: 'HR',
   },
   {
     id: 10,

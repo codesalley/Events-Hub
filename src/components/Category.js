@@ -1,55 +1,15 @@
-const CategoryList = [
-  {
-    id: 1,
-    name: 'Music',
-  },
-  {
-    id: 2,
-    name: 'Rock',
-  },
-  {
-    id: 3,
-    name: 'Country',
-  },
-  {
-    id: 4,
-    name: 'Merchandise',
-  },
-  {
-    id: 5,
-    name: 'Individual',
-  },
-  {
-    id: 6,
-    name: 'Casino/Gaming',
-  },
-  {
-    id: 7,
-    name: 'Aquatics',
-  },
-  {
-    id: 8,
-    name: 'Alternative',
-  },
-  {
-    id: 9,
-    name: 'Children\'s Theatre',
-  },
-  {
-    id: 10,
-    name: 'Donation',
-  },
-];
+import CategoryCard from './CategoryCard';
+import countryCodes from '../utils/countriesCodes';
+import MainCategoryDiv from '../style/CategoryStyle';
 
 const Category = () => (
-  <div>
-    {CategoryList.map((ele, indx) => (
-      <p key={indx.toString()}>
-        {ele.name}
-      </p>
-    ))}
 
-  </div>
+  <MainCategoryDiv className=" flex flex-row overflow-x-scroll overscroll-contain">
+    {countryCodes.map((item) => (
+      <CategoryCard key={item.id.toString()} name={item.country} />
+    ))}
+  </MainCategoryDiv>
+
 );
 
 export default Category;

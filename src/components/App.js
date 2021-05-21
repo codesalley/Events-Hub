@@ -12,7 +12,7 @@ function App({ getEvents }) {
   }, []);
 
   return (
-    <div className="main h-screen overflow-scroll px-4">
+    <div className="main h-screen  px-4">
       <NavBar />
       <Category />
       <Container />
