@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -8,11 +9,11 @@ import Container from './Container';
 
 function App({ getEvents }) {
   useEffect(() => {
-    getEvents(50);
+    getEvents(5);
   }, []);
 
   return (
-    <div className="main h-screen  px-4">
+    <div className="main  px-2 flex flex-col gap-2 overflow-scroll">
       <NavBar />
       <Category />
       <Container />
