@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import ShowPage from './components/ShowPage';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
@@ -9,7 +11,15 @@ import store from './store';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Router>
+        <Route exact path="/">
+          <App />
+        </Route>
+        <Route path="/:param">
+          <ShowPage />
+        </Route>
+
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
