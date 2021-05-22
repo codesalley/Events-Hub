@@ -20,9 +20,9 @@ const ShowPage = (props) => {
   }, []);
 
   return loading || !event ? <SplashScreen /> : (
-    <div className="flex md:px-11 flex-col items-center gap-1 pb-2">
+    <div className="flex  flex-col items-center gap-1 pb-2 bg-indigo-100 h-screen overflow-scroll">
 
-      <img className="w-full  " alt="event mg" src={event[0].images[9].url} />
+      <img className="w-full max-h-96 object-cover shadow-xl  " alt="event mg" src={event[0].images[9].url} />
       <div className="flex flex-col gap-2">
         <h2 className="text-center text-xl font-semibold text-gray-700"> Event Title </h2>
         <p className="text-center text-gray-600 text-sm">
