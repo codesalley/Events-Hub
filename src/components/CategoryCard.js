@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import getUnicodeFlagIcon from 'country-flag-icons/unicode';
 
 const CategoryCard = ({ props, onclick }) => {
-  console.log(onclick);
   const { country, code } = props;
 
   return (
@@ -21,9 +20,8 @@ const CategoryCard = ({ props, onclick }) => {
 
 CategoryCard.propTypes = {
   props: PropTypes.shape({
-    country: PropTypes.string,
     code: PropTypes.string,
-    id: PropTypes.string,
+    id: PropTypes.number,
   }).isRequired,
   country: PropTypes.string.isRequired,
   code: PropTypes.string.isRequired,
