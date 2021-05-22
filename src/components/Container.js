@@ -10,7 +10,7 @@ const Container = ({ events, filter }) => (
       <EventCard key={ele.id} event={ele} />
 
       // eslint-disable-next-line no-underscore-dangle
-    )) : events.filter((event) => event._embedded.venues[0].country.countryCode === filter).map((ele) => (
+    )) : events.filter((event) => event._embedded.venues[0].state.stateCode === filter).map((ele) => (
       <EventCard key={ele.id} event={ele} />
     )) }
 

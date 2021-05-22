@@ -4,9 +4,7 @@ import { useHistory } from 'react-router-dom';
 const EventCard = ({ event }) => {
   const { name, images } = event;
   const histroy = useHistory();
-  // const redirectMe = (param) => {
-  //   console.log(param);
-  // };
+
   return (
     <button type="button" onClick={() => histroy.push(`/${event.id}`)} className="h-40 border-0 transform hover:scale-105 transition duration-00 ease-in outline-none shadow max-w-sm w-full active:outline-none active:border-0 bg-indigo-600 rounded-xl relative flex flex-col">
       <img className="absolute shadow object-cover w-full h-full rounded-xl  " src={images[0].url} alt="event imgae" />

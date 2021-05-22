@@ -1,38 +1,38 @@
 const countryCodes = [
   {
     id: 1,
-    country: 'United States Of America',
-    code: 'US',
+    country: 'New York',
+    code: 'NY',
   },
   {
     id: 2,
-    country: 'Netherlands',
-    code: 'NL',
+    country: 'Georgia',
+    code: 'GA',
   },
   {
     id: 3,
-    country: 'Czech Republic',
-    code: 'CZ',
+    country: 'Texas',
+    code: 'TX',
   },
   {
     id: 4,
-    country: 'Spain',
-    code: 'ES',
+    country: 'West Virginia',
+    code: 'WV',
   },
   {
     id: 5,
-    country: 'Denmark',
-    code: 'DK',
+    country: 'Florida',
+    code: 'FL',
   },
   {
     id: 6,
-    country: 'New Zealand',
-    code: 'NZ',
+    country: 'Maryland',
+    code: 'MD',
   },
   {
     id: 7,
-    country: 'Switzerland',
-    code: 'CH',
+    country: 'Tennessee',
+    code: 'TN',
   },
 ];
 
