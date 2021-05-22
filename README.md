@@ -1,7 +1,7 @@
 # Events Hub
-***A powerful single-page web application for suggesting events closer to you, user can filter to show events he/she is most interested in***
+***A powerful single-page web application for suggesting events. user can filter to show events he/she is most interested in***
 
-**Ps** ***Your location is required for this app to suggest events closer.***
+
 
 
 ## Getting Started
@@ -32,6 +32,8 @@ open ```localhost:3000``` in browser.
 
 
 ## Live Demo
+
+[Live](https://60a938798eed109a78d5524d--zealous-mayer-d0b63a.netlify.app/)
 
 
 ## **Author**
