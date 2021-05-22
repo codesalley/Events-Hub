@@ -2,7 +2,7 @@ import { EVENTS_URL } from '../../utils/constants';
 
 export const getEvents = async (num) => {
   try {
-    const response = await fetch(EVENTS_URL(num));
+    const response = await fetch(EVENTS_URL(num), { mode: 'cors', method: 'GET' });
     if (!response.ok) {
       return false;
     }
