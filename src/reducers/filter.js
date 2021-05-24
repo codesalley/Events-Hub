@@ -6,7 +6,6 @@ const filterReducer = (state = filter, action) => {
 
   switch (type) {
     case GET_EVENT_BY_COUNTRY:
-      // eslint-disable-next-line no-underscore-dangle
       return payload.code;
 
     default:
