@@ -1,9 +1,7 @@
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import CategoryCard from './CategoryCard';
 import countryCodes from '../utils/countriesCodes';
 import MainCategoryDiv from '../style/CategoryStyle';
-import { getEventByCode } from '../actions';
 
 const Category = ({ filter }) => {
   const onclick = (code) => {
@@ -25,8 +23,4 @@ Category.propTypes = {
   filter: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = {
-  filter: (code) => getEventByCode(code),
-};
-
-export default connect(null, mapDispatchToProps)(Category);
+export default Category;

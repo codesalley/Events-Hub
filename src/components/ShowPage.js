@@ -1,6 +1,5 @@
 /* eslint-disable no-underscore-dangle */
 import { useParams, useHistory } from 'react-router-dom';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import SplashScreen from './SplashScreen';
@@ -83,8 +82,4 @@ ShowPage.propTypes = {
   events: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-const mapStateToProps = (state) => ({
-  events: state.events,
-});
-
-export default connect(mapStateToProps)(ShowPage);
+export default ShowPage;

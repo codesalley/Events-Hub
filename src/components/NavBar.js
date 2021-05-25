@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { getEventByCode } from '../actions';
 import Header from '../style/HeaderText';
 
 const NavBar = ({ filter }) => (
@@ -10,12 +8,8 @@ const NavBar = ({ filter }) => (
   </div>
 );
 
-const mapDispatchToProps = {
-  filter: (code) => getEventByCode(code),
-};
-
 NavBar.propTypes = {
   filter: PropTypes.func.isRequired,
 };
 
-export default connect(null, mapDispatchToProps)(NavBar);
+export default NavBar;

@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import NavBar from './NavBar';
-import Category from './Category';
-import Container from './Container';
 import SplashScreen from './SplashScreen';
+import CategoryContainer from '../containers/CategoryContainer';
+import MainContainer from '../containers/MainContainer';
+import NavBarContainer from '../containers/NavBarContainer';
 
 function App({ getEvents, events }) {
   useEffect(() => {
@@ -12,9 +12,9 @@ function App({ getEvents, events }) {
 
   return events.length > 2 ? (
     <div className="main  px-2 flex flex-col gap-2 overflow-scroll">
-      <NavBar />
-      <Category />
-      <Container />
+      <NavBarContainer />
+      <CategoryContainer />
+      <MainContainer />
     </div>
   ) : <SplashScreen />;
 }

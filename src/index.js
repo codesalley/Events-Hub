@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import ShowPage from './components/ShowPage';
 import AppContainer from './containers/AppContainer';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import store from './store';
+import ShowPageContainer from './containers/ShowPageContainer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,7 +16,7 @@ ReactDOM.render(
           <AppContainer />
         </Route>
         <Route path="/:param">
-          <ShowPage />
+          <ShowPageContainer />
         </Route>
 
       </Router>
