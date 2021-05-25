@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import ShowPage from './components/ShowPage';
-import App from './components/App';
+import AppContainer from './containers/AppContainer';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import store from './store';
@@ -13,7 +13,7 @@ ReactDOM.render(
     <Provider store={store}>
       <Router>
         <Route exact path="/">
-          <App />
+          <AppContainer />
         </Route>
         <Route path="/:param">
           <ShowPage />
