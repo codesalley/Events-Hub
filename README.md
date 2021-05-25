@@ -28,6 +28,9 @@ open project director in your terminal by  `` cd book-store ``
 
 open ```localhost:3000``` in browser. 
 
+### Run Test 
+
+`` npm run test ``
 
 
 
