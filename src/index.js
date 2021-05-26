@@ -18,7 +18,6 @@ ReactDOM.render(
         <Route path="/:param">
           <ShowPageContainer />
         </Route>
-
       </Router>
     </Provider>
   </React.StrictMode>,

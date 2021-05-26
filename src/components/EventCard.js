@@ -20,7 +20,7 @@ EventCard.propTypes = {
   event: PropTypes.shape({
     name: PropTypes.string,
     id: PropTypes.string,
-    images: PropTypes.arrayOf(PropTypes.string),
+    images: PropTypes.arrayOf(PropTypes.object),
   }).isRequired,
 };
 

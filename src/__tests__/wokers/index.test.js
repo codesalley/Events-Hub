@@ -4,5 +4,5 @@ test('fetches all the events from ticket master and return events in json', asyn
   const res = await getEvents(10);
 
   // eslint-disable-next-line no-underscore-dangle
-  expect(res._embedded.events.length).tobe(10);
+  expect(res._embedded.events.length).toBe(10);
 });
