@@ -1,0 +1,10 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+
+* {
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
